@@ -11,7 +11,7 @@ describe('Constellation Node Data', function() {
     { id: 2, type: 'role', label: 'ML Trainee', radius: 18, color: '#2DD4BF' },
     { id: 3, type: 'role', label: 'Dev & QA', radius: 18, color: '#2DD4BF' },
     { id: 4, type: 'metric', label: '95% accuracy', parent: 0, radius: 13, color: '#F5A623', value: 95 },
-    { id: 5, type: 'metric', label: '20+ daily customers interactions', parent: 0, radius: 11, color: '#F5A623', value: 50 },
+    { id: 5, type: 'metric', label: '50+ daily', parent: 0, radius: 11, color: '#F5A623', value: 50 },
     { id: 6, type: 'metric', label: '30% fewer queries', parent: 0, radius: 10, color: '#F5A623', value: 30 },
     { id: 7, type: 'metric', label: '40% faster queries', parent: 1, radius: 13, color: '#F5A623', value: 40 },
     { id: 8, type: 'metric', label: '4 dashboards', parent: 1, radius: 11, color: '#F5A623', value: 4 },
