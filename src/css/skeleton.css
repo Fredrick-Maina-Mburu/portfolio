@@ -1,0 +1,79 @@
+/* ═══════════════════════════════════════════════
+   FREDRICK MAINA PORTFOLIO — skeleton.css
+   Skeleton loading states for project cards
+   ═══════════════════════════════════════════════ */
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.project-card__skeleton {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    var(--surface) 25%,
+    var(--surface-2) 50%,
+    var(--surface) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
+  border-radius: var(--radius-lg);
+  opacity: 1;
+  transition: opacity 400ms ease;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Once loaded, skeleton fades out */
+.project-card.loaded .project-card__skeleton {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Skeleton state for content (before loaded) */
+.project-card:not(.loaded) .project-card__content {
+  opacity: 0;
+  transition: opacity 400ms ease;
+}
+.project-card.loaded .project-card__content {
+  opacity: 1;
+}
+
+/* Timeline skeleton (for slow connections) */
+.timeline__card--skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--surface) 25%,
+    var(--surface-2) 50%,
+    var(--surface) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
+  min-height: 120px;
+  border-radius: var(--radius-lg);
+}
+
+/* Cert card skeleton */
+.cert-card--skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--surface) 25%,
+    var(--surface-2) 50%,
+    var(--surface) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
+  min-height: 72px;
+}
+
+/* Reduced motion: no shimmer, just grey box */
+@media (prefers-reduced-motion: reduce) {
+  .project-card__skeleton,
+  .timeline__card--skeleton,
+  .cert-card--skeleton {
+    animation: none;
+    background: var(--surface-2);
+  }
+}

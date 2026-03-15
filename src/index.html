@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fredrick Maina — Data Analyst & Full-Stack Developer. Tableau Certified. AWS AI Practitioner. Building analytical systems that turn data into decisions." />
+  <meta name="theme-color" content="#0A0C0F" />
+  <title>Fredrick Maina — Data Analyst</title>
+
+  <!-- Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Space+Mono:wght@400;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/skeleton.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════ NAVIGATION ═══════════════════ -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__name" aria-label="Back to top">
+        <span class="nav__initials">FM</span>
+        <span class="nav__full">Fredrick Maina</span>
+      </a>
+      <button class="nav__toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="nav-links" role="list">
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#experience" class="nav__link">Experience</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#contact" class="nav__link nav__link--cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- ═══════════════════ HERO ═══════════════════ -->
+    <section class="hero" id="hero" aria-label="Introduction">
+      <div class="hero__bg-grid" aria-hidden="true"></div>
+      <div class="hero__content">
+        <div class="hero__text">
+          <p class="hero__eyebrow" data-animate="fade-up">Data Analyst · Nairobi, Kenya</p>
+          <h1 class="hero__name" data-animate="fade-up" data-delay="100">
+            Fredrick<br/><em>Maina</em>
+          </h1>
+          <p class="hero__tagline" data-animate="fade-up" data-delay="200">
+            Turning structured chaos into analytical clarity.<br/>
+            Tableau Certified · AWS AI Practitioner · ALX Data Analytics
+          </p>
+          <div class="hero__actions" data-animate="fade-up" data-delay="300">
+            <a href="#projects" class="btn btn--primary">View Projects</a>
+            <a href="mailto:fred.maina35@gmail.com" class="btn btn--ghost">Get in Touch</a>
+          </div>
+        </div>
+
+        <!-- Impact Constellation -->
+        <div class="constellation-wrap" aria-label="Interactive impact map showing key metrics from Fredrick's work" role="img">
+          <canvas id="constellation" width="520" height="520" aria-hidden="true"></canvas>
+          <div class="constellation__tooltip" id="constellation-tooltip" role="tooltip" aria-live="polite" hidden></div>
+        </div>
+      </div>
+
+      <!-- Headline Impact Metrics -->
+      <div class="hero__metrics" data-animate="fade-up" data-delay="400">
+        <div class="metric-chip">
+          <span class="metric-chip__num" data-count="95">0</span><span class="metric-chip__unit">%</span>
+          <span class="metric-chip__label">Data Accuracy Rate</span>
+        </div>
+        <div class="metric-divider" aria-hidden="true">·</div>
+        <div class="metric-chip">
+          <span class="metric-chip__num" data-count="20">0</span><span class="metric-chip__unit">+</span>
+          <span class="metric-chip__label">Daily Taxpayer Interactions</span>
+        </div>
+        <div class="metric-divider" aria-hidden="true">·</div>
+        <div class="metric-chip">
+          <span class="metric-chip__num" data-count="90">0</span><span class="metric-chip__unit">%</span>
+          <span class="metric-chip__label">Test Coverage Achieved</span>
+        </div>
+        <div class="metric-divider" aria-hidden="true">·</div>
+        <div class="metric-chip">
+          <span class="metric-chip__num" data-count="40">0</span><span class="metric-chip__unit">%</span>
+          <span class="metric-chip__label">Faster Query Processing</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════ ABOUT ═══════════════════ -->
+    <section class="section about" id="about" aria-label="About Fredrick">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__avatar-col" data-animate="fade-right">
+            <div class="about__avatar" aria-label="Fredrick Maina profile photo placeholder">
+              <div class="about__avatar-inner">
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" aria-hidden="true">
+                  <circle cx="40" cy="30" r="18" stroke="var(--accent)" stroke-width="1.5"/>
+                  <path d="M10 72c0-16.569 13.431-30 30-30s30 13.431 30 30" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                <span class="about__avatar-badge">CS '24</span>
+              </div>
+            </div>
+            <div class="about__location">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <circle cx="7" cy="6" r="2.5" stroke="var(--accent)" stroke-width="1.2"/>
+                <path d="M7 13s5-4.5 5-7A5 5 0 0 0 2 6c0 2.5 5 7 5 7Z" stroke="var(--accent)" stroke-width="1.2"/>
+              </svg>
+              Nyeri / Nairobi, Kenya
+            </div>
+          </div>
+          <div class="about__text-col" data-animate="fade-up">
+            <div class="section__label">About</div>
+            <h2 class="section__title">Analytical mind.<br/>Human-first communication.</h2>
+            <p class="about__body">
+              Computer Science graduate from Dedan Kimathi University (2024) with hands-on experience 
+              spanning data operations, compliance monitoring, full-stack development, and customer-facing 
+              roles. Currently interning at the Kenya Revenue Authority, handling high-volume taxpayer 
+              queries in a regulated environment where accuracy and clear communication are non-negotiable.
+            </p>
+            <p class="about__body">
+              Certified in Tableau, AWS, and ALX Data Analytics. Comfortable working across technical 
+              and non-technical teams — switching fluidly between data engineering tasks, front-end 
+              builds, and operational support. Fluent in English and Swahili.
+            </p>
+            <div class="about__links">
+              <a href="https://linkedin.com/in/fred-maina-mburu" class="about__link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in new tab)">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zm2-3a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg>
+                LinkedIn
+              </a>
+              <a href="mailto:fred.maina35@gmail.com" class="about__link" aria-label="Email Fredrick">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                fred.maina35@gmail.com
+              </a>
+              <a href="tel:+254113903978" class="about__link" aria-label="Phone number">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                0113 903 978
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════ EXPERIENCE ═══════════════════ -->
+    <section class="section experience" id="experience" aria-label="Work experience">
+      <div class="container">
+        <div class="section__header" data-animate="fade-up">
+          <div class="section__label">Experience</div>
+          <h2 class="section__title">Where the work happened.</h2>
+        </div>
+        <div class="timeline" role="list">
+
+          <article class="timeline__item timeline__item--featured" role="listitem" data-animate="fade-up">
+            <div class="timeline__marker" aria-hidden="true">
+              <span class="timeline__dot timeline__dot--active"></span>
+              <span class="timeline__line"></span>
+            </div>
+            <div class="timeline__card">
+              <div class="timeline__meta">
+                <span class="timeline__badge timeline__badge--current">Current</span>
+                <time class="timeline__date">May 2025 — Present</time>
+              </div>
+              <h3 class="timeline__role">Data Compliance & Operations Intern</h3>
+              <p class="timeline__org">Kenya Revenue Authority (KRA) · Nyeri</p>
+              <ul class="timeline__bullets" role="list">
+                <li>Managed <strong>20+ taxpayer interactions daily</strong>, guiding individuals through filing requirements with first-contact resolution</li>
+                <li>Verified and audited large volumes of compliance records, contributing to an estimated <strong>95%+ data accuracy rate</strong></li>
+                <li>Reduced repeat-query follow-ups by an estimated <strong>30%</strong> through plain-language process explanation</li>
+                <li>Maintained <strong>zero data-handling incidents</strong> across all processed submissions during tenure</li>
+                <li>Built process documentation adopted by new team members during onboarding</li>
+              </ul>
+              <div class="timeline__tags" aria-label="Skills used">
+                <span class="tag">Data Validation</span>
+                <span class="tag">Compliance Monitoring</span>
+                <span class="tag">KYC</span>
+                <span class="tag">Documentation</span>
+                <span class="tag">Customer Service</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline__item" role="listitem" data-animate="fade-up" data-delay="80">
+            <div class="timeline__marker" aria-hidden="true">
+              <span class="timeline__dot"></span>
+              <span class="timeline__line"></span>
+            </div>
+            <div class="timeline__card">
+              <div class="timeline__meta">
+                <time class="timeline__date">Mar 2025 — May 2025</time>
+              </div>
+              <h3 class="timeline__role">Data Analytics & ML Trainee</h3>
+              <p class="timeline__org">SKIES Program · Nyeri</p>
+              <ul class="timeline__bullets" role="list">
+                <li>Built and evaluated predictive models achieving <strong>&gt;85% accuracy</strong> across 3 team projects</li>
+                <li>Completed structured training in Python: Pandas, NumPy, scikit-learn, Matplotlib</li>
+                <li>Applied precision-first work ethic in team-based data pipelines</li>
+              </ul>
+              <div class="timeline__tags" aria-label="Skills used">
+                <span class="tag">Python</span>
+                <span class="tag">scikit-learn</span>
+                <span class="tag">ML Modelling</span>
+                <span class="tag">Data Preprocessing</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline__item" role="listitem" data-animate="fade-up" data-delay="160">
+            <div class="timeline__marker" aria-hidden="true">
+              <span class="timeline__dot"></span>
+              <span class="timeline__line"></span>
+            </div>
+            <div class="timeline__card">
+              <div class="timeline__meta">
+                <time class="timeline__date">Jan 2025 — Mar 2025</time>
+              </div>
+              <h3 class="timeline__role">Data Analytics Intern</h3>
+              <p class="timeline__org">Teach2Give · Nyeri</p>
+              <ul class="timeline__bullets" role="list">
+                <li>Reduced downstream reporting errors by an estimated <strong>40%</strong> through data cleaning and validation</li>
+                <li>Built <strong>interactive Tableau and Power BI dashboards</strong> adopted as primary reporting tools by the analytics team</li>
+                <li>Presented findings in non-technical language, improving decision-making speed for weekly reviews</li>
+              </ul>
+              <div class="timeline__tags" aria-label="Skills used">
+                <span class="tag">Tableau</span>
+                <span class="tag">Power BI</span>
+                <span class="tag">SQL</span>
+                <span class="tag">Excel</span>
+                <span class="tag">Python</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline__item" role="listitem" data-animate="fade-up" data-delay="240">
+            <div class="timeline__marker" aria-hidden="true">
+              <span class="timeline__dot"></span>
+            </div>
+            <div class="timeline__card">
+              <div class="timeline__meta">
+                <time class="timeline__date">Sep 2024 — Nov 2024</time>
+              </div>
+              <h3 class="timeline__role">Full-Stack Developer & QA/QE Attaché</h3>
+              <p class="timeline__org">Teach2Give · Nyeri</p>
+              <ul class="timeline__bullets" role="list">
+                <li>Achieved <strong>90% code coverage</strong> with Jest test suites, reducing production errors by ~20%</li>
+                <li>Optimised database queries cutting data processing time by <strong>35%</strong> on large datasets</li>
+                <li>Contributed to 3 live project deliverables within cross-functional team</li>
+              </ul>
+              <div class="timeline__tags" aria-label="Skills used">
+                <span class="tag">TypeScript</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Jest</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">React</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════ PROJECTS ═══════════════════ -->
+    <section class="section projects" id="projects" aria-label="Projects">
+      <div class="container">
+        <div class="section__header" data-animate="fade-up">
+          <div class="section__label">Projects</div>
+          <h2 class="section__title">What I've built.</h2>
+        </div>
+
+        <div class="projects__grid">
+
+          <!-- DATA PROJECT 1 -->
+          <article class="project-card project-card--featured" data-animate="fade-up" tabindex="0" aria-label="Sales Data Warehouse project">
+            <div class="project-card__skeleton" aria-hidden="true"></div>
+            <div class="project-card__content">
+              <div class="project-card__top">
+                <span class="project-card__category">Data Engineering</span>
+                <span class="project-card__year">2025</span>
+              </div>
+              <h3 class="project-card__title">Sales Data Warehouse &amp; ETL Pipeline</h3>
+              <p class="project-card__desc">Enterprise-style data warehouse built from scratch. Three-layer Medallion Architecture (Bronze/Silver/Gold) with Star Schema — consolidating heterogeneous source systems into an analytics-ready single source of truth.</p>
+              <div class="project-card__metrics">
+                <div class="project-metric"><span class="project-metric__val">~40%</span><span class="project-metric__label">Faster analytical queries</span></div>
+                <div class="project-metric"><span class="project-metric__val">~15%</span><span class="project-metric__label">Reduction in data errors</span></div>
+                <div class="project-metric"><span class="project-metric__val">5</span><span class="project-metric__label">Dimension tables</span></div>
+              </div>
+              <div class="project-card__stack">
+                <span class="tag tag--mono">SQL Server</span>
+                <span class="tag tag--mono">T-SQL</span>
+                <span class="tag tag--mono">Python</span>
+                <span class="tag tag--mono">Medallion Architecture</span>
+                <span class="tag tag--mono">Star Schema</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- DATA PROJECT 2 -->
+          <article class="project-card project-card--featured" data-animate="fade-up" data-delay="80" tabindex="0" aria-label="Business Monitoring Dashboards project">
+            <div class="project-card__skeleton" aria-hidden="true"></div>
+            <div class="project-card__content">
+              <div class="project-card__top">
+                <span class="project-card__category">Data Visualisation</span>
+                <span class="project-card__year">2025</span>
+              </div>
+              <h3 class="project-card__title">Infrastructure &amp; Business Monitoring Dashboards</h3>
+              <p class="project-card__desc">Suite of 4 interactive operational dashboards across Tableau and Power BI — Inventory, Sales Performance, HR Analytics, and Customer Churn — each with automated KPI alerting logic and live SQL data sources.</p>
+              <div class="project-card__metrics">
+                <div class="project-metric"><span class="project-metric__val">4</span><span class="project-metric__label">Live dashboards</span></div>
+                <div class="project-metric"><span class="project-metric__val">4–6wk</span><span class="project-metric__label">Earlier churn detection</span></div>
+                <div class="project-metric"><span class="project-metric__val">Auto</span><span class="project-metric__label">Anomaly alerts</span></div>
+              </div>
+              <div class="project-card__stack">
+                <span class="tag tag--mono">Tableau</span>
+                <span class="tag tag--mono">Power BI</span>
+                <span class="tag tag--mono">SQL</span>
+                <span class="tag tag--mono">Excel</span>
+                <span class="tag tag--mono">KPI Alerting</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- FULLSTACK PROJECT 1 -->
+          <article class="project-card" data-animate="fade-up" data-delay="160" tabindex="0" aria-label="Sentiment Analysis App project">
+            <div class="project-card__skeleton" aria-hidden="true"></div>
+            <div class="project-card__content">
+              <div class="project-card__top">
+                <span class="project-card__category">Full-Stack</span>
+                <span class="project-card__year">2024</span>
+              </div>
+              <h3 class="project-card__title">Sentiment Analysis App</h3>
+              <p class="project-card__desc">Production-grade PERN stack application processing user reviews and social media comments in real time. NLP-based sentiment classification with sub-second response times and full QA coverage.</p>
+              <div class="project-card__metrics">
+                <div class="project-metric"><span class="project-metric__val">90%</span><span class="project-metric__label">Test coverage</span></div>
+                <div class="project-metric"><span class="project-metric__val">35%</span><span class="project-metric__label">Faster query processing</span></div>
+                <div class="project-metric"><span class="project-metric__val">25%</span><span class="project-metric__label">Accuracy improvement</span></div>
+              </div>
+              <div class="project-card__stack">
+                <span class="tag tag--mono">PostgreSQL</span>
+                <span class="tag tag--mono">Express.js</span>
+                <span class="tag tag--mono">React</span>
+                <span class="tag tag--mono">Node.js</span>
+                <span class="tag tag--mono">Jest</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- FULLSTACK PROJECT 2 -->
+          <article class="project-card" data-animate="fade-up" data-delay="240" tabindex="0" aria-label="Job Search Application project">
+            <div class="project-card__skeleton" aria-hidden="true"></div>
+            <div class="project-card__content">
+              <div class="project-card__top">
+                <span class="project-card__category">Full-Stack · TypeScript</span>
+                <span class="project-card__year">2024</span>
+              </div>
+              <h3 class="project-card__title">Job Search Application</h3>
+              <p class="project-card__desc">Typed React/TypeScript job board with JSON Server mock API. Multi-filter search with URL query parameter syncing, application tracker with status badges, and custom hooks separating data from UI.</p>
+              <div class="project-card__stack">
+                <span class="tag tag--mono">React</span>
+                <span class="tag tag--mono">TypeScript</span>
+                <span class="tag tag--mono">JSON Server</span>
+                <span class="tag tag--mono">REST API</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- FULLSTACK PROJECT 3 -->
+          <article class="project-card" data-animate="fade-up" data-delay="320" tabindex="0" aria-label="Recipe Application project">
+            <div class="project-card__skeleton" aria-hidden="true"></div>
+            <div class="project-card__content">
+              <div class="project-card__top">
+                <span class="project-card__category">Full-Stack · API Integration</span>
+                <span class="project-card__year">2024</span>
+              </div>
+              <h3 class="project-card__title">Fullstack Recipe Application</h3>
+              <p class="project-card__desc">React recipe discovery app with Spoonacular API integration. Client-side filtering reduced unnecessary API calls by ~60%. Fully responsive, reusable component architecture.</p>
+              <div class="project-card__metrics">
+                <div class="project-metric"><span class="project-metric__val">~60%</span><span class="project-metric__label">Fewer redundant API calls</span></div>
+              </div>
+              <div class="project-card__stack">
+                <span class="tag tag--mono">React</span>
+                <span class="tag tag--mono">JavaScript</span>
+                <span class="tag tag--mono">Spoonacular API</span>
+                <span class="tag tag--mono">CSS</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- FULLSTACK PROJECT 4 -->
+          <article class="project-card" data-animate="fade-up" data-delay="400" tabindex="0" aria-label="Blog Application project">
+            <div class="project-card__skeleton" aria-hidden="true"></div>
+            <div class="project-card__content">
+              <div class="project-card__top">
+                <span class="project-card__category">Full-Stack · PHP</span>
+                <span class="project-card__year">2024</span>
+              </div>
+              <h3 class="project-card__title">Fullstack Blog Application</h3>
+              <p class="project-card__desc">Full-stack CMS platform built with PHP and MySQL without a framework. PHP MVC-style backend, bcrypt auth, role-based access control, normalised schema, and XSS/SQLi prevention throughout.</p>
+              <div class="project-card__stack">
+                <span class="tag tag--mono">PHP</span>
+                <span class="tag tag--mono">MySQL</span>
+                <span class="tag tag--mono">JavaScript</span>
+                <span class="tag tag--mono">REST API</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════ SKILLS ═══════════════════ -->
+    <section class="section skills" id="skills" aria-label="Skills and competencies">
+      <div class="container">
+        <div class="section__header" data-animate="fade-up">
+          <div class="section__label">Skills</div>
+          <h2 class="section__title">The toolkit.</h2>
+        </div>
+        <div class="skills__grid" data-animate="fade-up">
+
+          <div class="skill-group">
+            <h3 class="skill-group__title">Data Analytics</h3>
+            <div class="skill-group__tags">
+              <span class="tag tag--accent">Python</span>
+              <span class="tag tag--accent">Pandas</span>
+              <span class="tag tag--accent">NumPy</span>
+              <span class="tag tag--accent">scikit-learn</span>
+              <span class="tag tag--accent">Matplotlib</span>
+              <span class="tag tag--accent">SQL</span>
+              <span class="tag tag--accent">Excel</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group__title">Visualisation</h3>
+            <div class="skill-group__tags">
+              <span class="tag tag--accent">Tableau <em>Certified</em></span>
+              <span class="tag tag--accent">Power BI</span>
+              <span class="tag tag--accent">KPI Dashboards</span>
+              <span class="tag tag--accent">Data Storytelling</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group__title">Data Engineering</h3>
+            <div class="skill-group__tags">
+              <span class="tag">SQL Server</span>
+              <span class="tag">T-SQL</span>
+              <span class="tag">ETL Pipelines</span>
+              <span class="tag">Medallion Architecture</span>
+              <span class="tag">Star Schema</span>
+              <span class="tag">Data Warehousing</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group__title">Full-Stack Dev</h3>
+            <div class="skill-group__tags">
+              <span class="tag">TypeScript</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">React</span>
+              <span class="tag">Node.js / Express</span>
+              <span class="tag">PHP</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">REST APIs</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group__title">Cloud &amp; Infrastructure</h3>
+            <div class="skill-group__tags">
+              <span class="tag">AWS <em>AI Practitioner</em></span>
+              <span class="tag">Linux / Ubuntu</span>
+              <span class="tag">DigitalOcean</span>
+              <span class="tag">Git / GitHub</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group__title">QA &amp; Testing</h3>
+            <div class="skill-group__tags">
+              <span class="tag">Jest</span>
+              <span class="tag">Unit Testing</span>
+              <span class="tag">Integration Testing</span>
+              <span class="tag">Code Review</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════ CERTIFICATIONS ═══════════════════ -->
+    <section class="section certs" id="certifications" aria-label="Certifications">
+      <div class="container">
+        <div class="section__header" data-animate="fade-up">
+          <div class="section__label">Certifications</div>
+          <h2 class="section__title">Credentials.</h2>
+        </div>
+        <div class="certs__strip" data-animate="fade-up" role="list">
+          <div class="cert-card" role="listitem" tabindex="0">
+            <div class="cert-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="4" y="4" width="20" height="20" rx="3" stroke="var(--accent)" stroke-width="1.5"/><path d="M9 14l3 3 7-7" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <p class="cert-card__name">Tableau Certified Data Analyst</p>
+              <p class="cert-card__issuer">Tableau / Salesforce · 2025</p>
+            </div>
+          </div>
+          <div class="cert-card" role="listitem" tabindex="0">
+            <div class="cert-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="4" y="4" width="20" height="20" rx="3" stroke="var(--accent)" stroke-width="1.5"/><path d="M9 14l3 3 7-7" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <p class="cert-card__name">AWS AI Practitioner</p>
+              <p class="cert-card__issuer">Amazon Web Services · 2025</p>
+            </div>
+          </div>
+          <div class="cert-card" role="listitem" tabindex="0">
+            <div class="cert-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="4" y="4" width="20" height="20" rx="3" stroke="var(--accent)" stroke-width="1.5"/><path d="M9 14l3 3 7-7" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <p class="cert-card__name">ALX Data Analytics</p>
+              <p class="cert-card__issuer">ALX Africa · 2025</p>
+            </div>
+          </div>
+          <div class="cert-card" role="listitem" tabindex="0">
+            <div class="cert-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="4" y="4" width="20" height="20" rx="3" stroke="var(--accent)" stroke-width="1.5"/><path d="M9 14l3 3 7-7" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <p class="cert-card__name">ALX AI Career Essentials</p>
+              <p class="cert-card__issuer">ALX Africa · 2024</p>
+            </div>
+          </div>
+          <div class="cert-card" role="listitem" tabindex="0">
+            <div class="cert-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="4" y="4" width="20" height="20" rx="3" stroke="var(--accent)" stroke-width="1.5"/><path d="M9 14l3 3 7-7" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <p class="cert-card__name">ALX Professional Foundations</p>
+              <p class="cert-card__issuer">ALX Africa · 2025</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════ EDUCATION ═══════════════════ -->
+    <section class="section education" id="education" aria-label="Education">
+      <div class="container">
+        <div class="edu-card" data-animate="fade-up" tabindex="0">
+          <div class="edu-card__left">
+            <div class="section__label">Education</div>
+            <div class="edu-card__degree">BSc Computer Science</div>
+            <div class="edu-card__uni">Dedan Kimathi University of Technology</div>
+            <div class="edu-card__years">2021 — 2024 · Nyeri, Kenya</div>
+          </div>
+          <div class="edu-card__right">
+            <p class="edu-card__modules-label">Core Modules</p>
+            <div class="edu-card__modules">
+              <span class="tag">Operating Systems</span>
+              <span class="tag">Database Systems</span>
+              <span class="tag">Algorithms</span>
+              <span class="tag">Software Engineering</span>
+              <span class="tag">Computer Networks</span>
+              <span class="tag">Data Management</span>
+              <span class="tag">Systems Programming</span>
+              <span class="tag">Business Computing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════ CONTACT ═══════════════════ -->
+    <section class="section contact" id="contact" aria-label="Contact">
+      <div class="container">
+        <div class="contact__inner" data-animate="fade-up">
+          <div class="section__label">Contact</div>
+          <h2 class="contact__title">Let's work<br/><em>on data</em> together.</h2>
+          <p class="contact__body">Open to data analyst roles in Nairobi and beyond. Available for full-time positions, internships, and project-based collaboration.</p>
+          <div class="contact__actions">
+            <a href="mailto:fred.maina35@gmail.com" class="btn btn--primary btn--large">Send an Email</a>
+            <a href="https://linkedin.com/in/fred-maina-mburu" class="btn btn--ghost btn--large" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
+          </div>
+          <p class="contact__detail">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="6" r="2.5" stroke="var(--secondary)" stroke-width="1.2"/><path d="M7 13s5-4.5 5-7A5 5 0 0 0 2 6c0 2.5 5 7 5 7Z" stroke="var(--secondary)" stroke-width="1.2"/></svg>
+            Nyeri / Nairobi, Kenya · Open to remote
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════ FOOTER ═══════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__name">Fredrick Maina</span>
+        <span class="footer__copy">© 2025 · Built with precision</span>
+        <span class="footer__stack">HTML · CSS · Vanilla JS</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/chart.js" defer></script>
+  <script src="js/interactions.js" defer></script>
+</body>
+</html>

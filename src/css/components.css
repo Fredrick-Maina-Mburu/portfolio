@@ -1,0 +1,192 @@
+/* ═══════════════════════════════════════════════
+   FREDRICK MAINA PORTFOLIO — components.css
+   ═══════════════════════════════════════════════ */
+
+/* ── PROJECT CARDS ───────────────────────────── */
+.project-card {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: border-color 200ms ease, background 200ms ease, transform 200ms ease, box-shadow 200ms ease;
+  cursor: pointer;
+}
+.project-card:hover,
+.project-card:focus {
+  border-left: 3px solid var(--accent);
+  background: var(--surface-2);
+  box-shadow: 0 8px 32px rgba(74,239,184,0.08);
+  transform: translateY(-2px);
+  outline: none;
+}
+.project-card:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+.project-card--featured {
+  border-color: rgba(74,239,184,0.15);
+  background: linear-gradient(135deg, rgba(74,239,184,0.04) 0%, var(--surface) 60%);
+}
+.project-card--featured:hover {
+  border-left: 3px solid var(--accent);
+  border-color: rgba(74,239,184,0.4);
+}
+.project-card__content {
+  padding: 28px;
+  position: relative;
+  z-index: 1;
+}
+.project-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+.project-card__category {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--accent);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.project-card__year {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--muted);
+}
+.project-card__title {
+  font-family: var(--font-body);
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: var(--primary);
+  line-height: 1.35;
+  margin-bottom: 12px;
+}
+.project-card__desc {
+  font-size: 0.85rem;
+  color: var(--secondary);
+  line-height: 1.75;
+  margin-bottom: 20px;
+}
+.project-card__metrics {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  padding: 16px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.project-metric__val {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  color: var(--warn);
+  line-height: 1;
+  margin-bottom: 3px;
+}
+.project-metric__label {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  color: var(--secondary);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.project-card__stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* ── PULSE ANIMATION ─────────────────────────── */
+@keyframes pulse-ring {
+  0% { box-shadow: 0 0 0 0 rgba(74,239,184,0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(74,239,184,0); }
+  100% { box-shadow: 0 0 0 0 rgba(74,239,184,0); }
+}
+
+/* ── COUNTER ANIMATION ───────────────────────── */
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.metric-chip__num.counting {
+  animation: countUp 300ms ease forwards;
+}
+
+/* ── SECTION DIVIDER ─────────────────────────── */
+.section-rule {
+  width: 100%;
+  height: 1px;
+  background: var(--border);
+  margin: 0 auto;
+}
+.section-rule--accent {
+  background: linear-gradient(90deg, transparent, var(--accent-2), transparent);
+}
+
+/* ── DATA LABELS ─────────────────────────────── */
+.data-label {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  color: var(--secondary);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* ── HIGHLIGHT TEXT ──────────────────────────── */
+.highlight {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* ── VERTICAL RULE ───────────────────────────── */
+.v-rule {
+  position: fixed;
+  top: 0; bottom: 0;
+  left: calc(var(--container) * 0.25);
+  width: 1px;
+  background: rgba(74,239,184,0.03);
+  pointer-events: none;
+  display: none;
+}
+@media (min-width: 1300px) { .v-rule { display: block; } }
+
+/* ── SCROLL INDICATOR ────────────────────────── */
+.scroll-progress {
+  position: fixed;
+  top: 0; left: 0;
+  height: 2px;
+  background: var(--accent);
+  z-index: 200;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 50ms linear;
+}
+
+/* ── GRID PATTERN ────────────────────────────── */
+.grid-pattern {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(74,239,184,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(74,239,184,0.02) 1px, transparent 1px);
+  background-size: 32px 32px;
+  pointer-events: none;
+}
+
+/* ── ABOUT AVATAR HOVER ──────────────────────── */
+.about__avatar-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+.about__avatar {
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+.about__avatar:hover {
+  border-color: rgba(74,239,184,0.35);
+  box-shadow: 0 0 24px rgba(74,239,184,0.08);
+}

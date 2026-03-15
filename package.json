@@ -1,0 +1,38 @@
+{
+  "name": "fredrick-maina-portfolio",
+  "version": "1.0.0",
+  "description": "Data analyst portfolio for Fredrick Maina — analytical, elegant, human-crafted.",
+  "private": true,
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "echo 'No linter configured — add eslint if needed'",
+    "validate": "echo 'HTML validation: install html-validate for full validation'",
+    "dev": "python3 -m http.server 8080 --directory src",
+    "build": "npm run test"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ],
+    "collectCoverageFrom": [
+      "src/js/**/*.js"
+    ]
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "homepage": "https://Fredrick-Maina-Mburu.github.io/portfolio",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Fredrick-Maina-Mburu/portfolio.git"
+  },
+  "keywords": ["portfolio", "data-analyst", "Tableau", "Python", "SQL"],
+  "author": "Fredrick Maina <fred.maina35@gmail.com>",
+  "license": "MIT"
+}
